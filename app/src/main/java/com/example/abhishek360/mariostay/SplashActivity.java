@@ -9,7 +9,7 @@ import android.view.Window;
 
 public class SplashActivity extends Activity
 {
-    private static int SPLASH_TIME_OUT =4000;
+    private static int SPLASH_TIME_OUT =2000;
 
 
     @Override

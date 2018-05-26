@@ -398,9 +398,9 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>
                                         finish();
                                         dbTools = new dbTools(mContext);
                                         myUser=dbTools.insertUser(myUser);
-                                        Toast myToast = Toast.makeText(mContext,R.string.updatingReport, Toast.LENGTH_SHORT);
+                                        Toast myToast = Toast.makeText(mContext,"Fill the above details", Toast.LENGTH_SHORT);
                                         myToast.show();
-                                        Intent myIntent = new Intent(LoginActivity.this,UserTypeActivity.class);
+                                        Intent myIntent = new Intent(LoginActivity.this,RegisterActivity.class);
                                         LoginActivity.this.startActivity(myIntent);
                                     } finally{
                                         if (dbTools!=null)
